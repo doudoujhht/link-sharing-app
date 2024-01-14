@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *{
+        @apply font-instrument;
+        @apply leading-[150%];
+    }
+    h2{
+        @apply text-[2rem];
+        @apply font-bold
+    }
+    h3{
+        @apply text-[1rem];
+        @apply font-bold
+    }
+    h4{
+        @apply text-[1rem];
+    }
+    p, label{
+        @apply text-[0.75rem];
+    }
+}
+
+.border{
+    border-color: #d9d9d9;
+}
+button{
+    @apply px-[27px];
+    @apply py-[11px];
+    @apply text-[1rem];
+    @apply font-semibold;
+    @apply rounded-lg;
+    transition: all 0.2s ease-in-out;
+}
+button:disabled{
+    @apply opacity-25;
+}
+.btn-primary{
+    @apply text-white;
+    @apply bg-purple;
+}
+.btn-primary:active{
+    @apply bg-purple-light;
+    box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+}
+
+.btn-secondary{
+    @apply text-purple;
+    @apply bg-white;
+    @apply border;
+    @apply border-purple;
+}
+
+.btn-secondary:active{
+    @apply bg-purple-lighter;
+}
