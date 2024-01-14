@@ -17,6 +17,7 @@
     }
     h4{
         @apply text-[1rem];
+        @apply text-grey-darker;
     }
     p, label{
         @apply text-[0.75rem];

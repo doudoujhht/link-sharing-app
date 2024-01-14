@@ -9,17 +9,19 @@
     <img src="{logo}" alt="the devlinks logo">
     <section class="w-[476px] p-10 bg-white flex flex-col gap-10 xs:p-0 xs:w-full" >
         <div>
-            <h2>Login</h2>
-            <h4>Add your details below to get back into the app</h4>
+            <h2>Create account</h2>
+            <h4>Let's get you started sharing your links!</h4>
         </div>
 
         <form action="" class="flex flex-col gap-6">
             <TextField name="Email" imageSrc="{emailImage}" label="Email address" placeholder="e.g. alex@email.com"/>
-            <TextField name="Password" imageSrc="{passwordImage}" label="Password" placeholder="Enter your password"/>
+            <TextField name="Password" imageSrc="{passwordImage}" label="Create password" placeholder="Enter your password"/>
+            <TextField name="PasswordConfirmation" imageSrc="{passwordImage}" label="Confirm password" placeholder="Enter your password"/>
+            <p>password must contain at least 8 characters</p>
             <button class="btn-primary ">
-                Login
+                Create new account
             </button>
-            <h4 class="text-center">Don't have an account? <a href="/signup" class="text-purple">Create Account</a></h4>
+            <h4 class="text-center">Already have an account? <a href="/login" class="text-purple">Login</a></h4>
         </form>
     </section>
 </div>
