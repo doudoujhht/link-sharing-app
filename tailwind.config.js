@@ -22,6 +22,12 @@ export default {
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
+
+      '3xl': '1920px',
+
+      '1height':  {
+        'raw': '(max-height: 1024px) and (min-height: 768px)'
+      }
     
     },
     extend: {

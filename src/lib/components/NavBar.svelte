@@ -14,10 +14,6 @@
 
 
 
-
-
-
-
 <style>
     .active{
         background-color: #EFEBFF;
