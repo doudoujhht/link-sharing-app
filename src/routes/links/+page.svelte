@@ -1,6 +1,6 @@
 <script lang="ts">
     import NavBar from '$lib/components/NavBar.svelte';
-    import empty from '$lib/assets/images/illustration-empty.svg';
+    import LinkEditor from '$lib/components/LinkEditor.svelte';
     import Mockup from '$lib/components/Mockup.svelte';
 </script>
 <!-- TODO chnage all the css to tailwind -->
@@ -12,12 +12,7 @@
             <h2>Customize your links</h2>
             <h4 class="">Add/edit/remove links below and then share all your profiles with the world!</h4>
         </div>
-        <button class="btn-secondary w-full mt-10 mb-8">+ Add new link</button>
-        <div class="flex flex-col items-center p-6 bg-white-lighter h-[469px] 1height:h-3/5 rounded-xl justify-center">
-            <img src="{empty}" alt="">
-            <h2 class="mt-10 mb-6">Let's get you started</h2>
-            <h4 class="text-center w-[488px]">Use the "Add new link" button to get started. Once you have more than one link, you can reorder and edit them. We're here to help you share your profiles with everyone!</h4>
-        </div>
+        <LinkEditor />
         <div class="flex justify-end pt-16 w-full">
             <button class="btn-primary">Save</button>
         </div>
